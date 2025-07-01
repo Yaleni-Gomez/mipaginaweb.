@@ -54,7 +54,13 @@ nav ul li a:hover {
     0% { left: 0; }
     100% { left: 100%; transform: translateX(-100%); } /* Mueve la imagen de extremo a extremo */
 }
-
+.imagen{
+     width: 150px; /* Tamaño de la imagen */
+     width: 100px;
+    display: block;
+    justify-content: center;
+    
+}
 #introduccion {
     background-color: lightgray;
     padding: 20px;
