@@ -1,0 +1,91 @@
+body{
+    background-color: antiquewhite;
+    
+}
+nav {
+    background: #004466; /* Color de fondo */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Alineación */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+}
+
+nav ul {
+    list-style: none; /* Quita los estilos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s, color 0.3s; /* Animación suave */
+}
+
+nav ul li a:hover {
+    background: #0077cc; /* Color al pasar el cursor */
+    color: #fff; /* Color del texto */
+}
+/* imagen con movimiento */
+.contenedor-imagen {
+    position: relative; /* Define el área de movimiento */
+    width: 100%;
+    height: 150px; /* Ajusta la altura según tu diseño */
+    overflow: hidden; /* Evita que la imagen salga del contenedor */
+    margin-bottom: 20px; /* Espacio antes de la sección de introducción */
+}
+
+.imagen-animada {
+    width: 150px; /* Tamaño de la imagen */
+    position: absolute; /* Permite mover la imagen dentro del contenedor */
+    animation: mover 5s infinite alternate linear; /* Animación infinita */
+}
+
+@keyframes mover {
+    0% { left: 0; }
+    100% { left: 100%; transform: translateX(-100%); } /* Mueve la imagen de extremo a extremo */
+}
+
+#introduccion {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px;
+}
+#etica{
+    background-color: rgb(230, 222, 222);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px;
+   
+    
+}
+#valores{
+    background-color: rgb(252, 213, 213);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px; 
+}
+#desafios{
+    background-color: rgb(224, 184, 184);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 100px;
+}
+footer{
+    padding: 20px;
+    margin: 100px;
+    /*background-image: url('D:/PUENTE ALTO OTOÑO 2025/DIEÑO Y PROGRAMACION/DDA302-880-1 Diseño Y Programación VESPERTINO/TRABAJO FORMATIVO/Imagen_Etica.png'); /* Ruta de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 100px; /* Ajusta la imagen al tamaño de la pantalla */
+}
